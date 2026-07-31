@@ -2,36 +2,86 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Мой классный сайт</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Важное сообщение</title>
     <style>
-        /* Здесь мы пишем стили (CSS) */
+        /* Общие настройки для темного и стильного фона */
         body {
-            background-color: #f0f2f5; /* Цвет фона страницы */
-            font-family: Arial, sans-serif; /* Красивый шрифт */
-            text-align: center; /* Текст по центру */
-            padding-top: 50px;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            text-align: center;
         }
+
+        /* Большой заголовок ровно на 13 символов */
         h1 {
-            color: #333333; /* Цвет заглавного текста */
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            color: #ff3366;
+            text-shadow: 0 0 15px rgba(255, 51, 102, 0.4);
         }
-        p {
-            color: #666666;
-            font-size: 18px;
+
+        /* Контейнер для гифки с красивой тенью */
+        .gif-container {
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            border: 3px solid #333;
         }
-        .button {
-            display: inline-block;
-            background-color: #007bff; /* Цвет кнопки */
-            color: white; /* Цвет текста на кнопке */
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px; /* Скругленные углы */
-            margin-top: 20px;
+
+        .gif-container img {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Надпись в левом нижнем углу */
+        .footer-note {
+            position: fixed;
+            bottom: 15px;
+            left: 20px;
+            font-size: 0.9rem;
+            color: #777777;
+            font-style: italic;
+        }
+
+        /* Адаптивность для телефонов */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .gif-container img {
+                max-width: 280px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Привет, мир! 🚀</h1>
-    <p>Это мой личный сайт, и я сам научился его делать.</p>
-    <a class="button" href="https://github.com/DENpro737" target="_blank">Мой GitHub</a>
+
+    <!-- 13 символов (включая пробел: меняйте на свое слово, главное ровно 13 символов) -->
+    <h1>ДВИНЕШСЯ ГЕЙ</h1>
+
+    <!-- Блок с гифкой-рикроллом -->
+    <div class="gif-container">
+        <!-- Легендарный Rickroll танец -->
+        <img src="https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif" alt="rickroll" id="rickroll.gif">
+    </div>
+
+    <!-- Надпись в левом нижнем углу -->
+    <div class="footer-note">
+        живи с этим...
+    </div>
+
 </body>
 </html>
